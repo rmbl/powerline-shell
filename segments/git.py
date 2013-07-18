@@ -32,7 +32,7 @@ def add_git_segment():
     if not output:
         return
 
-    branch = output.rstrip()[2:]
+    branch = u'\uE0A0 ' + output.rstrip()[2:]
     has_pending_commits, has_untracked_files, origin_position = get_git_status()
     branch += origin_position
     if has_untracked_files:
